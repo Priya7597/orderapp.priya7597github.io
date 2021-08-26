@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/lib/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>    
+    <div class="backimg" id="box">
+      <h1 class="list_title">YOUR LIST</h1> 
+      <a href="checkout.html"><button class="nxt">NEXT</button></a> 
+      <a href="index.html"><button class="bck">BACK</button></a>  
+        <div class="list_firstbox">                                         
+          <table bla bla bla>
+            <h1 class="whitetxt text_center">MENU</h1>
+            <tr>
+              <th>MENU</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th><br><br>
+          
+            </tr>
+            <tr> 
+              <td>
+                Veg Maharashtrian Thali
+              </td>  
+              <td>
+                50$
+              </td>       
+              <td>
+                <input type="number" class="form-control text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>  
+              <td>
+                Maharaja Thali
+              </td> 
+              <td>
+                20$
+              </td>      
+              <td>
+                <input type="number" class="form-control text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Kolhapur Thali
+              </td>
+              <td>
+                85$
+              </td>          
+              <td>
+                <input type="number" class="form-control text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Bahubali Thali
+              </td>
+              <td>
+                10$
+              </td>          
+              <td>
+                <input type="number" class="form-control text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>            
+            <tr>
+              <td>
+                Mutton Thali
+              </td>
+              <td>
+                36$
+              </td>          
+              <td>
+                <input type="number" class="form-control text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Punjabi Thali
+              </td>
+              <td>
+                30$
+              </td>          
+              <td>
+                <input type="number" class="form-control text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+          </table>  
+        </div> 
+        <div class="list_secondbox">
+          <table bla bla bla>
+            <h1 class="whitetxt text_center">DRINK</h1>
+            <tr>
+              <th>DRINK</th>
+              <th>PRICE</th>
+              <th>QUANTITY</th><br><br>
+          
+            </tr>
+            <tr> 
+              <td>
+                Chai
+              </td>  
+              <td>
+                1$
+              </td>       
+              <td>
+                <input type="number" class="form-control txtclr text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>  
+              <td>
+                Coffee
+              </td> 
+              <td>
+                20$
+              </td>      
+              <td>
+                <input type="number" class="form-control txtclr text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Bubble Tea
+              </td>
+              <td>
+                15$
+              </td>          
+              <td>
+                <input type="number" class="form-control txtclr text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                American Latte
+              </td>
+              <td>
+                10$
+              </td>          
+              <td>
+                <input type="number" class="form-control txtclr text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Ice Coffee
+              </td>
+              <td>
+                25$
+              </td>          
+              <td>
+                <input type="number" class="form-control txtclr text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>
+            <tr>
+              <td>
+                American Latte
+              </td>
+              <td>
+                12$
+              </td>          
+              <td>
+                <input type="number" class="form-control txtclr text_center quantity" min="00" max="10" value="00"> 
+              </td>
+            </tr>        
+        </div>   
+    </div>
+</body>
+</html>
+
+<!--        
+        <div class="list_thirdbox">         
+          
+        </div>  
+
+
+          calculateSinglePrice();
+function calculate() {
+    var total = 0;
+    var priceCells = document.getElementsByClassName("priceCell");
+    for (var i = 0; i < priceCells.length; i++) {
+        var thisPrice = priceCells[i].innerHTML;
+        var quantity = document.getElementsByClassName("quantity")[i].value;
+        thisPrice = thisPrice * quantity;
+        total = total + thisPrice;
+    }
+    total = total.toFixed(2);
+}
+
+function calculateSinglePrice()
+{
+
+    var priceCells = document.getElementsByClassName("priceCell");
+      for (var i = 0; i < priceCells.length; i++) {
+      var total = 0;
+        var thisPrice = priceCells[i].innerHTML;
+        thisPrice = thisPrice.substring(0, thisPrice.indexOf('$'));
+        var quantity = document.getElementsByClassName("quantity")[i].value;
+        thisPrice = thisPrice * quantity;
+        total = total + thisPrice;
+  
+       console.log(total + '$');
+    }
+    
+     
+          </script> -->

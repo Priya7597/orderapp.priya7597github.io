@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body style="background-color:rgb(11, 20, 48);">
+    <div class="backimg">
+        <a href="list.html"><button class="bck">BACK</button></a>  
+    <div class="container">
+        <div class="checkout_topbox">
+            <h1>$CHECKOUT$</h1>
+        </div>
+        <div class="checkout_secondbox">
+             <h1>1590$</h1>
+             <br>
+             <p> Pay Money to XXX company</p>
+        </div>
+        <a href="#"><button class="fb"><h4>Pay with PAYPAL</h4></button></a>
+        <a href="#"><button class="sb"><h4>Pay using NET banking</h4></button></a>
+        <div class="checkout_lastbox ">
+            <p><b>Pay with Credit/Debit card</b></p>  <br>         
+            <form>
+                <label>CARD NUMBER</label>
+                <input type="text" placeholder="XXXX XXXX XXXX XXXX"><br><br>
+                <label>Expiry Date</label>
+                <label id="cv">CVV</label><br>
+                <input type="date" placeholder="MM/DD/YYYY" id="card-expiry">                               
+                <input type="password" placeholder="***" id="user-password"><br><br>            
+                <label>CARD OWNER NAME</label>
+                <input type="text" placeholder="YOUR NAME" >
+                <a href="#"><button class="tb"><h4>PAY NOW</h4></button></a>
+            </form>            
+        </div>
+    </div>  
+    <div class="last_time">
+        <form>
+            <label>Special Requirement (with extra charges)
+                <textarea rows="4" cols="40" id="special_require"></textarea>
+            </label>
+        </form>  
+    </div> 
+</body>
+</html>
